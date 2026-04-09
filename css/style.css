@@ -69,12 +69,12 @@ textarea {
     outline: none;
 }
 
-input:focus,
-textarea:focus {
-    border-color: var(--green-600-medium);
-    border-width: 2px;
+input[type="text"],
+input[type="email"],
+textarea :hover{
+   cursor: pointer;
+   border-color: var(--green-600-medium);
 }
-
 .radio-grid {
     display: flex;
     gap: 15px;
@@ -91,6 +91,9 @@ textarea:focus {
     transition: background 0.2s;
 }
 
+#consent:hover {
+    cursor: pointer!important;
+}
 .custom-radio:hover {
     border-color: var(--green-600-medium);
 }
@@ -122,7 +125,7 @@ textarea:focus {
 }
 
 .submit-btn:hover {
-    background-color: var(--grey-900-darker);
+    background-color: var(--green-600-medium);
 }
 
 .error-message {
@@ -168,3 +171,53 @@ textarea:focus {
 .input-error .error-message {
     animation: fadeIn 0.3s ease;
 }
+
+.success-banner {
+    display: none; 
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--grey-900-darker);
+    color: var(--white);
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    z-index: 1000;
+    width: 90%;
+    max-width: 400px;
+}
+
+.success-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.success-header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.success-banner p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--green-200-lighter);
+}
+.error-message {
+    display: none; 
+    color: var(--red);
+    font-size: 14px;
+    margin-top: 8px;
+}
+.input-error input, 
+.input-error textarea {
+    border: 1px solid var(--red);
+}
+
+.input-error .error-message {
+    display: block;
+}
+
+
