@@ -33,12 +33,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Contact Form Screenshot](./screenshot.jpg)
+![Contact Form Screenshot](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/contact-form-html-css-js)
-- Live Site URL: (http://localhost:3000) 
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/contactform-LzqilpAm2o)
+- Live Site URL: (https://freedev-group.github.io/Contact-form-kabidu/) 
 
 ## My process
 
